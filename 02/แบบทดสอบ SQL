@@ -1,0 +1,9 @@
+1. SELECT Region FROM STORE WHERE Region = 'East'
+
+2. SELECT * FROM PRODUCT WHERE Product_key IN (SELECT Product_key FROM SALES_FACT WHERE Store_key = (SELECT Store_key FROM STORE WHERE City = 'New York'))
+
+3. SELECT SUM(Profit) AS TotalProfit FROM SALES_FACT WHERE Store_key IN (SELECT Store_key FROM STORE WHERE City = 'New York')
+
+4. DELETE FROM SALES_FACT WHERE Product_key IN (SELECT Product_key FROM PRODUCT WHERE Brand = 'Wolf')
+
+5. UPDATE PRODUCT SET Brand = 'W' WHERE Description = 'Toy Story'
