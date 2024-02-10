@@ -1,7 +1,7 @@
 import { MongoClient } from "mongodb";
 
 const connectionString =
-  "mongodb+srv://kyoukung:vxsPuE6OXDCAic24@cluster0.t8v4l0a.mongodb.net/";
+  "mongodb://127.0.0.1:27017";
 
 export const client = new MongoClient(connectionString);
 
